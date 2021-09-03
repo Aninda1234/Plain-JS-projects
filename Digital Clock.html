@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Simple Digital Clock</title>
+
+		<style>
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Lucida Console";
+  font-size: 12px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #570404
+}
+
+a:visited {
+  text-decoration: none;
+  color: #f8f5f5
+}
+
+a:active {
+  text-decoration: none;
+  color: #f56666
+}
+
+a:hover {
+  text-decoration: underline
+}
+
+.header {
+  color: #696969;
+  margin: 0px;
+  padding: 0px;
+}
+		</style>
+
+		<script>
+			var timer = setInterval(function() {
+				myTimer();
+			}, 1000);
+
+			function myTimer() {
+				var dateTime = new Date();
+				document.getElementById("clock").innerHTML = dateTime.toLocaleTimeString();
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="header">Created by Aninda
+			<br> <a href="" title="www.github.com">www.github.com</a>
+		</div>
+		  
+		<p>Simple Digital Clock</p>
+		<p id="clock"></p>
+	</body>
+</html>
+
+
